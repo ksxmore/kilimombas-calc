@@ -24,23 +24,21 @@
                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                   <div class="col p-4 d-flex flex-column position-static">
                      <form role="form" name="inputy">
+                        <label for="piwo" class="form-label">Liczba wypitych piw (ok. 5%):</label>
+                        <input type="number" id="piwo" class="form-control" placeholder="w sztukach">
 
-                        <label for="piwo" class="form-label">Liczba wypitych piw:</label>
-                        <input type="number" id="piwo" class="form-control" name="piwo" value="0" required>
+                        <label for="woda" class="form-label">Ilość wypitej wódki/innych napojów wysoko procentowych (ok. 40%):</label>
+                        <input type="number" id="woda" class="form-control" placeholder="w mililitrach">
 
-                        <label for="woda" class="form-label">Ilość wypitej wódki/innych napojów wysoko procentowych:</label>
-                        <input type="number" id="woda" class="form-control" name="woda" value="0" required>
-
-                        <label for="wino" class="form-label">Ilość wypitego wina/trunków winopodobnych:</label>
-                        <input type="number" id="wino" class="form-control" name="wino" value="0" required>
+                        <label for="wino" class="form-label">Ilość wypitego wina/trunków winopodobnych (ok. 12%):</label>
+                        <input type="number" id="wino" class="form-control" placeholder="w mililitrach">
 
                         <label for="pite" class="form-label">Pite na pusty żołądek?</label><br>
-                        <input type="checkbox" id="pite" name="checkbox"> Tak
+                        <input type="checkbox" id="pite"> Tak
 
                         <p class="lead">Kilimombasów:</p>
                         <h3 id="wynik">0.00</h3>
-                        <!--<input type="number" class="form-control" name="result">-->
-                        <button class="btn btn-lg fw-bold border-white bg-dark text-light mt-3" onclick="Calculator(); return false;">Licz</button>
+                        <button type="submit" class="btn btn-lg fw-bold border-white bg-dark text-light mt-3" id="btn1">Licz</button>
                      </form>
                   </div>
                </div>
@@ -50,12 +48,12 @@
                   <div class="col p-4 d-flex flex-column position-static">
                      <h3 class="mb-1">Skala Kilimomby:</h3>
                      <ul class="list-group">
-                        <li class="list-group-item list-group-item-info">Oszołomiony jak byś się piwa napił 0.10 - 0.25</li>
-                        <li class="list-group-item list-group-item-primary">Spokojnie bo rano wstaje 0.25 - 0.50</li>
-                        <li class="list-group-item list-group-item-success">Księciunio 0.50 - 0.80</li>
-                        <li class="list-group-item list-group-item-warning">Margrabia 0.80 - 1.20</li>
-                        <li class="list-group-item list-group-item-danger">Car 1.20 - 1.70</li>
-                        <li class="list-group-item list-group-item-dark">Bohater narodowy 1.70 - SOR</li>
+                        <li class="list-group-item list-group-item-info" id="k0">Oszołomiony jak byś się piwa napił 0.10 - 0.25</li>
+                        <li class="list-group-item list-group-item-primary" id="k1">Spokojnie bo rano wstaje 0.26 - 0.50</li>
+                        <li class="list-group-item list-group-item-success" id="k2">Księciunio 0.51 - 0.80</li>
+                        <li class="list-group-item list-group-item-warning" id="k3">Margrabia 0.81 - 1.20</li>
+                        <li class="list-group-item list-group-item-danger" id="k4">Car 1.21 - 1.70</li>
+                        <li class="list-group-item list-group-item-dark" id="k5">Bohater narodowy 1.70 - SOR</li>
                      </ul>
                   </div>
                </div>
@@ -63,14 +61,11 @@
          </div>
       </div>
    </main>
-
-
-  <footer class="bg-light text-center text-lg-start fixed-bottom">
-     <div class="text-center p-3">
-        <p>Copyright © 2021 phpBB by Przemo</p>
-     </div>
-  </footer>
-  
+   <footer class="bg-light text-center text-lg-start fixed-bottom">
+      <div class="text-center p-3">
+         <p>Copyright © 2021 phpBB by Przemo</p>
+      </div>
+   </footer>
    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
