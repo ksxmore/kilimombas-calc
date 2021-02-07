@@ -46,6 +46,7 @@ function Calculator() {
    var wynik = 0;
 
    if (document.getElementById('pite').checked) {
+
       wynik = ((a + (b * 0.018) + (c * 0.005)) * 1.1) / 10;
    } else {
       wynik = (a + (b * 0.018) + (c * 0.005)) / 10;
