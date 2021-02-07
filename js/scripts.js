@@ -14,8 +14,8 @@ function clearTab() {
    var i;
 
    for (i = 0; i < 6; i++) {
-      if (document.getElementById("k" + i).classList.contains("rounded") === true) {
-         document.getElementById("k" + i).className = klasy[i];
+      if (document.getElementById('k' + i).classList.contains("rounded") === true) {
+         document.getElementById('k' + i).className = klasy[i];
       }
    }
 }
@@ -56,5 +56,6 @@ function Calculator() {
    SetKili(wynik);
 }
 
-button.addEventListener('click', Calculator, false);
 button.addEventListener('click', clearTab, false);
+button.addEventListener('click', Calculator, false);
+
